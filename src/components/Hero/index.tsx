@@ -1,42 +1,62 @@
+import gps from "../../assets/images/hero.png"
 
-// import MapImage from '../../../public/gps.png' // şəkili öz map mockup ilə əvəz et
+const Hero = () => {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-
-function Hero() {
     return (
-        <section className="bg-gradient-to-r from-primary to-primaryDark text-white">
-            <div className="max-w-[1440px] mx-auto px-6 py-20 flex flex-col-reverse lg:flex-row items-center gap-10">
+        <section className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 pt-16 flex items-center">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    {/* Left side - Content */}
+                    <div className="text-center lg:text-left">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                            Innovative
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#183dbf] to-[#188c00]"> GPS</span> and
+                            <br />
+                            <span className="text-orange-500">Geolocation</span> Solutions
+                        </h1>
+                        <p className="text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                            Transform your business with cutting-edge GPS technology. From fleet management to precision tracking,
+                            we deliver solutions that drive efficiency and growth.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <button
+                                onClick={() => scrollToSection('services')}
+                                className="bg-[#47b331] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#188c00] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+                            >
+                                View Services
+                            </button>
+                            <button
+                                onClick={() => scrollToSection('contact')}
+                                className="border-2 border-[#1238c1] text-[#1238c1] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#1238c1] hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+                            >
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
 
-                {/* Left Side */}
-                <div className="flex-1">
-                    <h1 className="font-poppins font-bold text-4xl lg:text-5xl mb-6">
-                        Real-time GPS & GIS software
-                    </h1>
-                    <p className="font-inter text-lg mb-8 max-w-lg">
-                        Vehicle tracking, mapping and digital-twin services — secure and scalable
-                    </p>
-                    <div className="flex gap-4 flex-wrap">
-                        <button className="bg-accent text-white font-poppins font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
-                            Get a demo
-                        </button>
-                        <button className="border border-white text-white font-poppins font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-primary transition">
-                            Contact
-                        </button>
+                    {/* Right side - Tech Illustration */}
+                    <div className="relative">
+                        <div className="relative z-10">
+                            <img
+                                src={gps}
+                                alt="GPS Technology"
+                                className="rounded-2xl w-full object-cover"
+                            />
+
+                        </div>
+                        {/* Background elements */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-orange-400/20 rounded-2xl blur-3xl transform rotate-6"></div>
                     </div>
                 </div>
-
-                {/* Right Side */}
-                <div className="flex-1 flex justify-center">
-                    {/* <img
-                        
-                        alt="Map Illustration"
-                        className="max-w-sm w-full drop-shadow-lg"
-                    /> */}
-                </div>
-
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
