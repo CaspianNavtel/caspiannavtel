@@ -35,16 +35,16 @@ const Navbar = () => {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#47b331] transition-colors">
+                        <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#47b331] transition-colors outline-0">
                             About
                         </button>
-                        <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#47b331] transition-colors">
+                        <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-[#47b331] transition-colors outline-0">
                             Services
                         </button>
-                        <button onClick={() => scrollToSection('equipment')} className="text-gray-700 hover:text-[#47b331] transition-colors">
+                        <button onClick={() => scrollToSection('equipment')} className="text-gray-700 hover:text-[#47b331] transition-colors outline-0">
                             Equipment
                         </button>
-                        <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-[#47b331] transition-colors">
+                        <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-[#47b331] transition-colors outline-0">
                             Contact
                         </button>
                         <button
