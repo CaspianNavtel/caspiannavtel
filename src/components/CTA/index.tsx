@@ -9,13 +9,13 @@ const CTA = () => {
     };
 
     return (
-        <section className="py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-r from-cyan-700 via-cyan-600 to-cyan-700 relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
-                <div className="absolute bottom-10 right-10 w-48 h-48 border border-white rounded-full"></div>
+                <div className="absolute top-10 left-10 w-32 h-32  bg-white/20 rounded-full"></div>
+                <div className="absolute bottom-10 right-10 w-48 h-48  bg-white/10 rounded-full"></div>
                 <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full"></div>
-                <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-white/5 rounded-full"></div>
+                <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-white/ rounded-full"></div>
             </div>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -39,7 +39,7 @@ const CTA = () => {
                     </button>
 
                     <div className="flex items-center space-x-4 text-blue-100">
-                        <div className="w-px h-12 bg-blue-400 hidden sm:block"></div>
+                        <div className="w-px h-12 bg-cyan-700 hidden sm:block"></div>
                         <div className="text-center sm:text-left">
                             <div className="font-semibold">Free Consultation</div>
                             <div className="text-sm opacity-80">No commitment required</div>

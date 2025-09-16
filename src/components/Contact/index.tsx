@@ -60,7 +60,7 @@ const Contact = () => {
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 outline-0 focus:border-transparent transition-all duration-300"
                                         placeholder="Your name"
                                     />
                                 </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                                         required
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 outline-0 focus:ring-orange-500 focus:border-transparent transition-all duration-300"
                                         placeholder="your.email@example.com"
                                     />
                                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                                         rows={6}
                                         value={formData.message}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 resize-none"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 outline-0 focus:ring-orange-500 focus:border-transparent transition-all duration-300 resize-none"
                                         placeholder="Tell us about your GPS and geolocation needs..."
                                     />
                                 </div>
@@ -112,7 +112,7 @@ const Contact = () => {
                     <div className="space-y-8">
                         {/* Map placeholder */}
                         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                            <div className="h-64 bg-gradient-to-br from-blue-400 via-blue-500 to-orange-400 flex items-center justify-center relative overflow-hidden">
+                            <div className="h-64 bg-gradient-to-br from-cyan-500 via-cyan-600 to-orange-400 flex items-center justify-center relative overflow-hidden">
                                 <div className="absolute inset-0 opacity-20">
                                     <div className="absolute top-4 left-4 w-6 h-6 bg-white rounded-full"></div>
                                     <div className="absolute top-12 right-8 w-4 h-4 bg-white/80 rounded-full"></div>
@@ -144,8 +144,8 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="bg-blue-100 p-3 rounded-lg">
-                                        <Phone className="h-6 w-6 text-blue-600" />
+                                    <div className="bg-cyan-100 p-3 rounded-lg">
+                                        <Phone className="h-6 w-6 text-cyan-600" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Phone</h4>
