@@ -1,5 +1,16 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import DjiDrtk2 from '../../assets/equipment/dji-d-rtk.jpeg';
+import EyeSensor from '../../assets/equipment/eyesensorside.webp';
+import Fmb900 from '../../assets/equipment/fmb900.webp';
+import Fmb930 from '../../assets/equipment/fmb930-side.webp';
+import Fmc125 from '../../assets/equipment/fmc125.webp';
+import Fmc920 from '../../assets/equipment/fmc920-.webp';
+import Gol32 from '../../assets/equipment/GOL32.jpg';
+import Matrice350 from '../../assets/equipment/Matrice350.jpg';
+import R20 from '../../assets/equipment/R20_img3_600.jpg';
+import ZenmuseL1 from '../../assets/equipment/Zenmuse L1.jpg';
+import ZenmuseP1 from '../../assets/equipment/Zenmuse P1.jpg';
 
 const Equipment = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,27 +18,57 @@ const Equipment = () => {
     const equipment = [
         {
             name: "Professional GPS Tracker",
-            image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: DjiDrtk2,
             description: "High-precision GPS tracking device with long battery life and weather resistance for reliable asset monitoring."
         },
         {
             name: "Fleet Management System",
-            image: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: EyeSensor,
             description: "Comprehensive dashboard system for real-time fleet monitoring, route optimization, and driver management."
         },
         {
             name: "Drone GPS Module",
-            image: "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: Fmb900,
             description: "Advanced GPS module for unmanned aerial vehicles with precision positioning and autonomous navigation capabilities."
         },
         {
             name: "Satellite Communication Unit",
-            image: "https://images.pexels.com/photos/586063/pexels-photo-586063.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: Fmc125,
             description: "Rugged satellite communication device for remote area monitoring and emergency response applications."
         },
         {
             name: "Mobile GPS Terminal",
-            image: "https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&w=800",
+            image: Fmb930,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: Fmc920,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: Gol32,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: Matrice350,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: R20,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: ZenmuseL1,
+            description: "Portable GPS terminal with touch screen interface for field operations and data collection."
+        },
+        {
+            name: "Mobile GPS Terminal",
+            image: ZenmuseP1,
             description: "Portable GPS terminal with touch screen interface for field operations and data collection."
         }
     ];
@@ -64,7 +105,7 @@ const Equipment = () => {
                                             <img
                                                 src={item.image}
                                                 alt={item.name}
-                                                className="w-full h-96 md:h-full object-cover"
+                                                className="w-full h-[500px] object-cover object-center rounded-lg"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-transparent"></div>
                                         </div>
