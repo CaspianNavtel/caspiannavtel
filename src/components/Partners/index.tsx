@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import asanxidmet from '../../assets/partners/asanxidmet.jpg'
+import asanxidmet from '../../assets/partners/asanxidmet.png'
 import avis from '../../assets/partners/avis.png'
 import azercell from '../../assets/partners/azercell.png'
 import azeraluminium from '../../assets/partners/azeraluminium.png'

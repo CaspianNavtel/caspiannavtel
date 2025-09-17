@@ -16,7 +16,7 @@ const Hero = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                             Innovative
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#183dbf] to-[#188c00]"> GPS</span> and
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007bbe] to-[#188c00]"> GPS</span> and
                             <br />
                             <span className="text-orange-500">Geolocation</span> Solutions
                         </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
                             </button>
                             <button
                                 onClick={() => scrollToSection('contact')}
-                                className="border-2 border-[#1238c1] text-[#1238c1] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#1238c1] hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+                                className="border-2 border-[#007bbe] text-[#007bbe] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#007bbe] hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
                             >
                                 Contact Us
                             </button>

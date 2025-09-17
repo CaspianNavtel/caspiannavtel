@@ -99,7 +99,7 @@ const Contact = () => {
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-orange-500 text-white px-6 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex items-center justify-center space-x-2"
+                                    className="w-full bg-orange-400 text-white px-6 py-4 rounded-lg font-semibold hover:bg-orange-500 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex items-center justify-center space-x-2"
                                 >
                                     <span>Send Message</span>
                                     <Send className="h-5 w-5" />
@@ -138,8 +138,8 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Email</h4>
-                                        <p className="text-gray-600">info@geosolutions.com</p>
-                                        <p className="text-gray-600">sales@geosolutions.com</p>
+                                        <p className="text-gray-600">info@caspiannavtel.az</p>
+
                                     </div>
                                 </div>
 
@@ -149,8 +149,8 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Phone</h4>
-                                        <p className="text-gray-600">+1 (555) 123-4567</p>
-                                        <p className="text-gray-600">+1 (555) 987-6543</p>
+                                        <p className="text-gray-600">+994 55 212 03 35</p>
+
                                     </div>
                                 </div>
 
@@ -161,9 +161,9 @@ const Contact = () => {
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Address</h4>
                                         <p className="text-gray-600">
-                                            123 Technology Drive<br />
-                                            Innovation District<br />
-                                            Tech City, TC 12345
+                                            Ələsgər Qayıbov küçəsi 12<br />
+                                            məhəllə 1222 Bakı<br />
+                                            Azərbaycan
                                         </p>
                                     </div>
                                 </div>

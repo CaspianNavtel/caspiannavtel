@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className="md:col-span-1">
                         <div className="flex items-center space-x-2 mb-4">
                             <MapPin className="h-8 w-8 text-orange-500" />
-                            <span className="font-bold text-xl">GeoSolutions</span>
+                            <span className="font-bold text-xl">Caspiannavtel</span>
                         </div>
                         <p className="text-gray-400 mb-6 leading-relaxed">
                             Leading provider of innovative GPS and geolocation solutions, transforming businesses
@@ -104,18 +104,18 @@ const Footer = () => {
                         <div className="space-y-4">
                             <div className="flex items-center space-x-3">
                                 <Mail className="h-5 w-5 text-orange-500" />
-                                <span className="text-gray-400">info@geosolutions.com</span>
+                                <span className="text-gray-400">info@caspiannavtel.az</span>
                             </div>
                             <div className="flex items-center space-x-3">
                                 <Phone className="h-5 w-5 text-orange-500" />
-                                <span className="text-gray-400">+1 (555) 123-4567</span>
+                                <span className="text-gray-400">+994 55 212 03 35</span>
                             </div>
                             <div className="flex items-start space-x-3">
                                 <MapPin className="h-5 w-5 text-orange-500 mt-0.5" />
                                 <span className="text-gray-400">
-                                    123 Technology Drive<br />
-                                    Innovation District<br />
-                                    Tech City, TC 12345
+                                    Ələsgər Qayıbov küçəsi 12<br />
+                                    məhəllə 1222 Bakı<br />
+                                    Azərbaycan
                                 </span>
                             </div>
                         </div>
@@ -126,7 +126,7 @@ const Footer = () => {
                 <div className="border-t border-gray-800 mt-12 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <div className="text-gray-400 text-sm">
-                            © 2025 GeoSolutions. All rights reserved.
+                            © 2025 CaspianNavtel. All rights reserved.
                         </div>
                         <div className="flex space-x-6 text-sm">
                             <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">Privacy Policy</a>
