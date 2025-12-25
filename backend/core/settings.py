@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
-from os import getenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,16 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = getenv('SECRET_KEY')
-DEBUG = getenv('DEBUG') == 'True'
- 
-ALLOWED_HOSTS = getenv('ALLOWED_HOSTS').split(', ')
- 
-CORS_ALLOWED_ORIGINS = getenv('CORS_ALLOWED_ORIGINS').split(', ')
- 
-CSRF_TRUSTED_ORIGINS = [
-    "https://caspiannavtel.az"
-]
+SECRET_KEY = 'django-insecure-hhk+_2+1hcuefl=r2a$hab&sr(w^op0*el%uctoz*3&@0%gm8-'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -42,15 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'corsheaders',
     'info',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -82,14 +74,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        "NAME": getenv('POSTGRES_DB'),
-        "USER": getenv('POSTGRES_USER'),
-        "PASSWORD": getenv('POSTGRES_PASSWORD'),
-        "HOST": getenv('POSTGRES_HOST'),
-        "PORT": getenv('POSTGRES_PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
